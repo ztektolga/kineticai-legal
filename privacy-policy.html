@@ -6,130 +6,124 @@
     <title>Kinetic AI - Privacy Policy</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0f;
-            color: #e4e4e7;
-            line-height: 1.7;
-            padding: 20px;
-        }
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        h1 {
-            font-size: 28px;
-            color: #ffffff;
-            margin-bottom: 8px;
-        }
-        .updated {
-            color: #71717a;
-            font-size: 14px;
-            margin-bottom: 32px;
-        }
-        h2 {
-            font-size: 18px;
-            color: #ffffff;
-            margin-top: 32px;
-            margin-bottom: 12px;
-        }
-        p, li {
-            color: #a1a1aa;
-            font-size: 15px;
-            margin-bottom: 12px;
-        }
-        ul { padding-left: 20px; margin-bottom: 16px; }
-        li { margin-bottom: 6px; }
-        a { color: #ff2d92; text-decoration: none; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e4e4e7; line-height: 1.7; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2rem; color: #fff; margin-bottom: 8px; }
+        h2 { font-size: 1.3rem; color: #fff; margin: 28px 0 12px; }
+        .subtitle { color: #a1a1aa; margin-bottom: 32px; }
+        .section { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; margin-bottom: 16px; }
+        .section p, .section ul { color: #a1a1aa; margin-bottom: 12px; }
+        .section ul { padding-left: 20px; }
+        .section li { margin-bottom: 6px; }
+        a { color: #06b6d4; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .divider {
-            border: none;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            margin: 40px 0;
-        }
+        .footer { text-align: center; color: #71717a; margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .nav { display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap; justify-content: center; }
+        .nav a { color: #a1a1aa; font-size: 0.9rem; }
+        .badge { display: inline-block; background: rgba(6,182,212,0.15); color: #06b6d4; padding: 4px 12px; border-radius: 8px; font-size: 0.85rem; margin-bottom: 24px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: January 2025</p>
+        <p class="subtitle">Your privacy matters to us. This policy explains how Kinetic AI handles your data.</p>
+        <span class="badge">Last updated: March 4, 2026</span>
 
-        <h2>1. Data We Collect</h2>
-        <p>At Kinetic AI ("we", "our", "us"), we value your privacy. We collect the following data:</p>
-        <ul>
-            <li>Account information (email address, name — when provided via Apple/Google Sign-In)</li>
-            <li>Device information (model, operating system)</li>
-            <li>Usage statistics (anonymous)</li>
-            <li>Purchase history (in-app purchases)</li>
-            <li>Photos and videos you upload (for AI processing only)</li>
-            <li>Push notification tokens (if notifications are enabled)</li>
-        </ul>
+        <div class="section">
+            <h2>1. Information We Collect</h2>
+            <p>When you use Kinetic AI, we may collect the following information:</p>
+            <ul>
+                <li><strong>Account Information:</strong> Email address, name, and authentication credentials when you sign up via Apple Sign-In or Google Sign-In.</li>
+                <li><strong>Photos and Videos:</strong> Images and videos you upload for AI processing. These are temporarily stored on our servers for processing and are automatically deleted after generation is complete.</li>
+                <li><strong>Usage Data:</strong> App usage statistics, feature interactions, and crash reports to improve our service.</li>
+                <li><strong>Device Information:</strong> Device type, operating system version, and app version for compatibility and support purposes.</li>
+                <li><strong>Purchase Information:</strong> Transaction records for in-app purchases processed through Apple App Store or Google Play Store.</li>
+            </ul>
+        </div>
 
-        <h2>2. How We Use Your Data</h2>
-        <p>We use your data for the following purposes:</p>
-        <ul>
-            <li>Providing AI photo and video processing services</li>
-            <li>Managing your account and credit balance</li>
-            <li>Improving app performance and user experience</li>
-            <li>Sending push notifications about completed generations</li>
-            <li>Offering customer support</li>
-            <li>Fulfilling legal obligations</li>
-        </ul>
+        <div class="section">
+            <h2>2. How We Use Your Information</h2>
+            <ul>
+                <li>To provide AI-powered photo and video generation services.</li>
+                <li>To process and verify in-app purchases and manage your credit balance.</li>
+                <li>To send you notifications about your generation status (if enabled).</li>
+                <li>To improve our AI models and app performance (using anonymized, aggregated data only).</li>
+                <li>To provide customer support and respond to your inquiries.</li>
+                <li>To comply with legal obligations and prevent fraud.</li>
+            </ul>
+        </div>
 
-        <h2>3. Data Security</h2>
-        <ul>
-            <li>Your data is protected with industry-standard encryption (TLS/SSL).</li>
-            <li>Uploaded media files are processed and deleted from our servers within 24 hours.</li>
-            <li>We do not share your personal data with third parties for marketing purposes.</li>
-            <li>Passwords are hashed using bcrypt and never stored in plain text.</li>
-            <li>Authentication tokens (JWT) are used for secure session management.</li>
-        </ul>
+        <div class="section">
+            <h2>3. Photo and Video Processing</h2>
+            <p>Photos and videos you upload are sent to our secure servers for AI processing. We want you to know:</p>
+            <ul>
+                <li>Your uploaded media is used solely for generating your requested content.</li>
+                <li>Uploaded files are automatically deleted from our servers within 24 hours after processing.</li>
+                <li>Generated content (results) are stored temporarily so you can download them, and are deleted within 7 days.</li>
+                <li>We do not use your photos or videos to train AI models.</li>
+                <li>We do not share your photos or videos with any third parties.</li>
+            </ul>
+        </div>
 
-        <h2>4. Third-Party Services</h2>
-        <p>We use trusted third-party services for specific functionality:</p>
-        <ul>
-            <li><strong>Fal.ai</strong> — AI model processing (images and videos are sent for processing and deleted after completion)</li>
-            <li><strong>Apple App Store / Google Play</strong> — Payment processing for in-app purchases</li>
-            <li><strong>DigitalOcean</strong> — Cloud infrastructure and file storage</li>
-            <li><strong>Expo</strong> — Push notification delivery</li>
-        </ul>
-        <p>Each of these services has their own privacy policies governing their handling of data.</p>
+        <div class="section">
+            <h2>4. Data Storage and Security</h2>
+            <p>We take the security of your data seriously:</p>
+            <ul>
+                <li>All data transmissions are encrypted using TLS/SSL protocols.</li>
+                <li>User data is stored on secure servers with restricted access.</li>
+                <li>We implement industry-standard security measures to protect against unauthorized access, alteration, or destruction of data.</li>
+                <li>Payment processing is handled entirely by Apple and Google; we never store your payment card information.</li>
+            </ul>
+        </div>
 
-        <h2>5. Children's Privacy</h2>
-        <p>Our App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that we have collected data from a child under 13, we will delete this data immediately. If you believe your child has provided us with personal data, please contact us at <a href="mailto:privacy@kineticai.app">privacy@kineticai.app</a>.</p>
+        <div class="section">
+            <h2>5. Third-Party Services</h2>
+            <p>Kinetic AI uses the following third-party services:</p>
+            <ul>
+                <li><strong>Apple Sign-In / Google Sign-In:</strong> For secure authentication.</li>
+                <li><strong>Apple App Store / Google Play Store:</strong> For processing in-app purchases.</li>
+                <li><strong>AI Processing APIs:</strong> For generating photos and videos (your media is sent securely to these services for processing only).</li>
+                <li><strong>Expo Push Notifications:</strong> For delivering generation status notifications.</li>
+            </ul>
+            <p>Each third-party service operates under its own privacy policy. We encourage you to review their policies.</p>
+        </div>
 
-        <h2>6. Your Rights</h2>
-        <p>You have the following rights regarding your personal data:</p>
-        <ul>
-            <li><strong>Access:</strong> Request a copy of the data we hold about you</li>
-            <li><strong>Deletion:</strong> Request deletion of your data (available in-app via Settings > Delete Account)</li>
-            <li><strong>Objection:</strong> Object to specific data processing activities</li>
-            <li><strong>Portability:</strong> Request your data in a portable format</li>
-        </ul>
-        <p>To exercise these rights, email <a href="mailto:privacy@kineticai.app">privacy@kineticai.app</a></p>
+        <div class="section">
+            <h2>6. Your Rights</h2>
+            <p>You have the following rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Access:</strong> You can view your account information within the app's Settings page.</li>
+                <li><strong>Deletion:</strong> You can delete your account and all associated data at any time from Settings > Account > Delete Account. This action is permanent and irreversible.</li>
+                <li><strong>Data Portability:</strong> You can download your generated content from the app before deleting your account.</li>
+                <li><strong>Opt-out:</strong> You can disable notifications at any time from the app settings or your device settings.</li>
+            </ul>
+        </div>
 
-        <h2>7. Data Retention</h2>
-        <ul>
-            <li>Account data is retained as long as your account is active.</li>
-            <li>Uploaded media is deleted within 24 hours of processing.</li>
-            <li>Generation history is retained until you delete it or delete your account.</li>
-            <li>When you delete your account, all associated data is permanently removed.</li>
-        </ul>
+        <div class="section">
+            <h2>7. Children's Privacy</h2>
+            <p>Kinetic AI is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will promptly delete such data.</p>
+        </div>
 
-        <h2>8. Cookies and Tracking</h2>
-        <p>We do not use cookies within the App. Only basic, anonymous analytics data is collected to improve app performance. We do not use any third-party advertising or tracking SDKs.</p>
+        <div class="section">
+            <h2>8. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+        </div>
 
-        <h2>9. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Changes will be posted within the App and on this page. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+        <div class="section">
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@kineticai.studio">support@kineticai.studio</a></p>
+        </div>
 
-        <h2>10. Contact Us</h2>
-        <p>For privacy-related questions or concerns:</p>
-        <p>Email: <a href="mailto:privacy@kineticai.app">privacy@kineticai.app</a></p>
-        <p>Support: <a href="mailto:support@kineticai.app">support@kineticai.app</a></p>
-
-        <hr class="divider">
-        <p style="text-align: center; color: #52525b; font-size: 13px;">© 2025 Kinetic AI. All rights reserved.</p>
+        <div class="footer">
+            <p>&copy; 2026 Kinetic AI. All rights reserved.</p>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="support.html">Support</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="mailto:support@kineticai.studio">Contact</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
