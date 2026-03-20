@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kinetic AI — Destek</title>
+  <!--
+    KURULUM (domain yoksa):
+    1) Aşağıdaki SUPPORT_EMAIL değerini kendi e-postanızla değiştirin (ör. gmail.com).
+    2) Bu dosyayı ücretsiz statik hostinge koyun, örn. GitHub Pages:
+       Repo → Settings → Pages → Branch: main, folder: /static-web/support
+       Size verilen URL örn: https://KULLANICI.github.io/REPO-ADI/support/
+    3) App Store Connect → App Information → Support URL olarak bu tam adresi yazın.
+  -->
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0a0a0f;
+      --card: #121218;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --accent: #22d3ee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1.25rem 4rem;
+    }
+    main { max-width: 640px; margin: 0 auto; }
+    h1 { font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem; }
+    .lead { color: var(--muted); margin: 0 0 2rem; }
+    section {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem;
+      color: var(--accent);
+    }
+    p { margin: 0 0 0.75rem; }
+    p:last-child { margin-bottom: 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { margin: 0; padding-left: 1.2rem; }
+    li { margin-bottom: 0.35rem; }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    code { font-size: 0.9em; background: rgba(255,255,255,0.08); padding: 0.15rem 0.4rem; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Destek</h1>
+    <p class="lead">Kinetic AI uygulaması için yardım ve iletişim.</p>
+
+    <section>
+      <h2>İletişim</h2>
+      <p>
+        E-posta:
+        <!-- DEĞİŞTİR: Kendi destek adresinizi yazın -->
+        <a id="support-mail" href="mailto:ztektolga@gmail.com">ztektolga@gmail.com</a>
+      </p>
+      <p>Genelde 1–2 iş günü içinde yanıt veriyoruz.</p>
+    </section>
+
+    <section>
+      <h2>Sık konular</h2>
+      <ul>
+        <li><strong>Satın alma ve krediler:</strong> App Store sipariş numaranızı veya e-postanızı belirtin.</li>
+        <li><strong>Hesap:</strong> Apple, Google veya e-posta ile giriş — hangisini kullandığınızı yazın.</li>
+        <li><strong>Üretim hataları:</strong> Hangi özelliği kullandığınızı ve mümkünse ekran görüntüsünü ekleyin.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Bu sayfa statik HTML’dir; özel bir domain gerekmez. App Store’daki Support URL olarak buranın tam linkini kullanın.
+    </footer>
+  </main>
+  <script>
+    (function () {
+      var el = document.getElementById('support-mail');
+      if (!el) return;
+      var addr = el.textContent.trim();
+      if (addr.indexOf('ztektolga@gmail.com') !== -1) {
+        el.textContent = '(Lütfen HTML içinde destek e-postasını ayarlayın)';
+        el.removeAttribute('href');
+        el.style.opacity = '0.85';
+      }
+    })();
+  </script>
+</body>
+</html>
